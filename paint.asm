@@ -65,7 +65,7 @@ mov A,R0
 RL A
 mov R0,A
 waitleft:
-jb P2.0,loop
+jb P2.1,loop
 ljmp waitleft
 
 up:
@@ -73,7 +73,7 @@ mov A,R1
 RL A
 mov R1,A
 waitup:
-jb P2.3,loop
+jb P2.2,loop
 ljmp waitup
 
 down:
