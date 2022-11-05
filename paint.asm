@@ -53,7 +53,6 @@ MOV P1,#0h
 ljmp loop
 
 right:
-CLR C
 mov A,R0
 RR A
 mov R0,A
@@ -62,7 +61,6 @@ jb P2.0,loop
 ljmp waitright
 
 left:
-CLR C
 mov A,R0
 RL A
 mov R0,A
@@ -71,7 +69,6 @@ jb P2.0,loop
 ljmp waitleft
 
 up:
-CLR C
 mov A,R1
 RL A
 mov R1,A
@@ -80,7 +77,6 @@ jb P2.3,loop
 ljmp waitup
 
 down:
-CLR C
 mov A,R1
 RR A
 mov R1,A
